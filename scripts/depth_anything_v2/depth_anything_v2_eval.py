@@ -403,7 +403,7 @@ if __name__ == "__main__":
     
     parser = argparse.ArgumentParser(description='Evaluate Depth-Anything-V2 on prosthesis dataset (Marigold-aligned)')
     parser.add_argument('--base_dir', type=str, 
-                        default='/path/to/work/mlp_dataset/prospthesisproject-Data/Code/Data',
+                        default='dataset',
                         help='Base directory containing all sequences')
     parser.add_argument('--encoder', type=str, default='large', 
                         choices=['vits', 'vitb', 'vitl', 'vitg', 'small', 'base', 'large', 'giant'],

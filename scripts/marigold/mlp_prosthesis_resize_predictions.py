@@ -48,7 +48,7 @@ def resize_single_file(args):
         return ('error', pred_file, str(e))
 
 def resize_all_predictions():
-    base_dir = "/path/to/work/mlp_dataset/prospthesisproject-Data/Code/Data"
+    base_dir = "dataset"
     prediction_base = os.path.join(base_dir, "marigold_predictions")
     
     sequences = [

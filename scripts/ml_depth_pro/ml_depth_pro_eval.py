@@ -422,7 +422,7 @@ if __name__ == "__main__":
     
     parser = argparse.ArgumentParser(description='Evaluate ML-Depth-Pro on prosthesis dataset (Marigold-aligned)')
     parser.add_argument('--base_dir', type=str,
-                        default='/path/to/work/mlp_dataset/prospthesisproject-Data/Code/Data',
+                        default='dataset',
                         help='Base directory containing all sequences')
     parser.add_argument('--num_workers', type=int, default=16,
                         help='Number of parallel workers')

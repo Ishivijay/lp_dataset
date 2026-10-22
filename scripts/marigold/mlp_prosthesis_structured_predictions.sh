@@ -1,6 +1,6 @@
 #!/bin/bash
 
-BASE_DATA_DIR="prospthesisproject-Data/Code/Data"
+BASE_DATA_DIR="dataset"
 PREDICTION_BASE="$BASE_DATA_DIR/marigold_predictions"
 
 echo "Base directory: $BASE_DATA_DIR"

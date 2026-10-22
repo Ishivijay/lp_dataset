@@ -221,7 +221,7 @@ def main():
         description='Evaluate VGGT zero-shot predictions on prosthesis dataset'
     )
     parser.add_argument('--base_dir', type=str,
-                       default='/path/to/work/mlp_dataset/prospthesisproject-Data/Code/Data',
+                       default='dataset',
                        help='Base directory containing sequences')
     parser.add_argument('--use_alignment', action='store_true',
                        help='Use least-squares alignment')

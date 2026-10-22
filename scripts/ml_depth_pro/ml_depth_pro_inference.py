@@ -2,7 +2,7 @@ import os
 from pathlib import Path
 from PIL import Image
 import sys
-sys.path.insert(0, '/path/to/home/ml-depth-pro/src')
+sys.path.insert(0, 'ml-depth-pro/src')
 import depth_pro
 import numpy as np
 import torch
@@ -72,7 +72,7 @@ def process_single_image(args):
 
 def main():
     # Base directory containing all sequences
-    base_dir = Path("/path/to/work/mlp_dataset/prospthesisproject-Data/Code/Data")
+    base_dir = Path("dataset")
     
     # Sequences to process
     sequences = [

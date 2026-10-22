@@ -18,7 +18,7 @@ from tqdm import tqdm
 import json
 
 # Add VGGT to path
-sys.path.insert(0, '/path/to/home/vggt')
+sys.path.insert(0, 'vggt')
 
 from vggt.models.vggt import VGGT
 from vggt.utils.load_fn import load_and_preprocess_images
@@ -196,7 +196,7 @@ def main():
         description='VGGT Zero-Shot Inference on Prosthesis Dataset'
     )
     parser.add_argument('--base_dir', type=str,
-                       default='/path/to/work/mlp_dataset/prospthesisproject-Data/Code/Data',
+                       default='dataset',
                        help='Base directory containing sequences')
     parser.add_argument('--model_path', type=str, default=None,
                        help='Path to local model checkpoint (optional)')
@@ -239,7 +239,7 @@ def main():
     except Exception as e:
         print(f"\nError initializing VGGT model: {e}")
         print("\nPlease ensure:")
-        print("1. VGGT repository is cloned to /path/to/home/vggt")
+        print("1. VGGT repository is cloned to ./vggt")
         print("2. All dependencies are installed (pip install -r requirements.txt)")
         print("3. You have internet access to download model weights from Hugging Face")
         return
@@ -271,7 +271,7 @@ def main():
         "num_workers": args.num_workers
     }
     
-    log_dir = Path("/path/to/home/log")
+    log_dir = Path("logs")
     log_dir.mkdir(exist_ok=True)
     
     with open(log_dir / "vggt_inference_info.json", 'w') as f:

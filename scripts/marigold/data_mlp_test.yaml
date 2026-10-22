@@ -1,5 +1,5 @@
 name: mlp_depth
 disp_name: mlp_prosthesis_test
-dir: /path/to/work/mlp_dataset/prospthesisproject-Data/Code/Data
-filenames: /path/to/work/mlp_dataset/prospthesisproject-Data/Code/Data/mlp_prosthesis_test_files.txt
+dir: dataset
+filenames: dataset/splits/all.txt
 eigen_valid_mask: true

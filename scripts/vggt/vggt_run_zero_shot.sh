@@ -75,7 +75,7 @@ mkdir -p "$LOG_DIR"
 TS="$(date +'%Y%m%d-%H%M%S')"
 LOG_FILE="$LOG_DIR/vggt_zero_shot_${TS}.log"
 
-BASE_DIR="${WORK}/mlp_dataset/prospthesisproject-Data/Code/Data"
+BASE_DIR="dataset"
 
 #################################################################################
 # SETUP ENVIRONMENT

@@ -43,7 +43,7 @@ def regenerate_vis(npy_path):
 def main():
     parser = argparse.ArgumentParser(description="Regenerate VGGT visualizations with Spectral colormap")
     parser.add_argument("--base_dir", type=str,
-                        default="/path/to/work/mlp_dataset/prospthesisproject-Data/Code/Data",
+                        default="dataset",
                         help="Base directory containing sequence folders")
     parser.add_argument("--num_workers", type=int, default=16,
                         help="Number of parallel workers")

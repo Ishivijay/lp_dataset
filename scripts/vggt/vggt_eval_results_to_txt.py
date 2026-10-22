@@ -78,7 +78,7 @@ def main():
         description='Generate VGGT evaluation TXT summary from CSV results'
     )
     parser.add_argument('--base_dir', type=str,
-                        default='/path/to/work/mlp_dataset/prospthesisproject-Data/Code/Data',
+                        default='dataset',
                         help='Directory containing VGGT evaluation CSV files')
     parser.add_argument('--output_dir', type=str, default=None,
                         help='Output directory for TXT files (default: base_dir)')
