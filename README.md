@@ -1,4 +1,4 @@
-# Zero-Shot Monocular Depth Estimation for Visual Perception in Lower-Limb Prostheses
+# Zero-Shot Monocular Depth Estimation for Visual Perception in Lower-Limb Prostheses 
 
 **Zero-Shot Monocular Depth Estimation for Visual Perception in Lower-Limb Prostheses**
 <br>
