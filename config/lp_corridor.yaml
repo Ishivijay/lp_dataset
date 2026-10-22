@@ -1,0 +1,10 @@
+# Evaluation config for the corridor split (282 frames).
+#
+# Used with the Marigold evaluation script:
+#   python Marigold/script/depth/eval.py --base_data_dir "$PWD" \
+#       --dataset_config config/lp_corridor.yaml --alignment least_square ...
+name: mlp_depth
+disp_name: lp_corridor
+dir: dataset
+filenames: dataset/splits/corridor.txt
+eigen_valid_mask: true

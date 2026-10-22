@@ -1,0 +1,7 @@
+# Dataset frames are distributed on request and are never committed.
+lms_kamal_*/
+
+# Keep the split definitions and this note.
+!README.md
+!splits/
+!splits/*.txt

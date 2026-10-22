@@ -1,0 +1,10 @@
+# Evaluation config for the staircase split (2,862 frames).
+#
+# Used with the Marigold evaluation script:
+#   python Marigold/script/depth/eval.py --base_data_dir "$PWD" \
+#       --dataset_config config/lp_staircase.yaml --alignment least_square ...
+name: mlp_depth
+disp_name: lp_staircase
+dir: dataset
+filenames: dataset/splits/staircase.txt
+eigen_valid_mask: true

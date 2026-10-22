@@ -1,0 +1,13 @@
+# Evaluation config for the full LP dataset (3,144 frames).
+#
+# Used with the Marigold evaluation script:
+#   python Marigold/script/depth/eval.py --base_data_dir "$PWD" \
+#       --dataset_config config/lp_all.yaml --alignment least_square ...
+#
+# `dir` is resolved against --base_data_dir; `filenames` is relative to the
+# directory the command is run from (the repository root).
+name: mlp_depth
+disp_name: lp_all
+dir: dataset
+filenames: dataset/splits/all.txt
+eigen_valid_mask: true

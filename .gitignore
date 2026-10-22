@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Evaluation outputs
+results/
+outputs/
+*.npy
+*.npz
+*.log
+
+# Model checkpoints
+checkpoints/
+*.pt
+*.pth
+*.ckpt
+
+# Editors / OS
+.idea/
+.DS_Store
