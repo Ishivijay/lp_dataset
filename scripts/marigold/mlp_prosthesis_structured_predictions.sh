@@ -10,7 +10,7 @@ echo "Prediction base: $PREDICTION_BASE"
 mkdir -p "$PREDICTION_BASE"
 
 # Process each sequence
-for sequence_dir in "$BASE_DATA_DIR"/lms_kamal_*; do
+for sequence_dir in "$BASE_DATA_DIR"/lms_subject1_*; do
     if [ -d "$sequence_dir" ]; then
         sequence_name=$(basename "$sequence_dir")
         

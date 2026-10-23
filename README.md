@@ -21,6 +21,7 @@ used to benchmark four depth foundation models without any fine-tuning.
 | `config/` | one evaluation config per split (`lp_all`, `lp_staircase`, `lp_corridor`) |
 | `scripts/` | inference and evaluation code for each benchmarked model, plus result comparison |
 | `model_customizations/` | files applied on top of a model checkout: the LP dataset registration for Marigold, the raw-depth export for Depth Anything V2 |
+| `LICENSE` | Creative Commons Attribution-NonCommercial 4.0 International license text |
 
 ## Dataset
 
@@ -36,19 +37,19 @@ limb above or below the knee and connected to a laptop over USB-C 3.2.
 
 | Sequence | Mount | Direction | Images |
 |---|---|---|---|
-| `lms_kamal_LA_downstairs_Nopeople_1` | left, above knee | down | 428 |
-| `lms_kamal_LA_upstairs_Nopeople_1` | left, above knee | up | 629 |
-| `lms_kamal_LB_upstairs_Nopeople_2` | left, below knee | up | 591 |
-| `lms_kamal_RA_downstairs_Nopeople_1` | right, above knee | down | 375 |
-| `lms_kamal_RA_upstairs_Nopeople_1` | right, above knee | up | 622 |
-| `lms_kamal_RB_downstairs_Nopeople_1` | right, below knee | down | 499 |
+| `lms_subject1_LA_downstairs_Nopeople_1` | left, above knee | down | 428 |
+| `lms_subject1_LA_upstairs_Nopeople_1` | left, above knee | up | 629 |
+| `lms_subject1_LB_upstairs_Nopeople_2` | left, below knee | up | 591 |
+| `lms_subject1_RA_downstairs_Nopeople_1` | right, above knee | down | 375 |
+| `lms_subject1_RA_upstairs_Nopeople_1` | right, above knee | up | 622 |
+| `lms_subject1_RB_downstairs_Nopeople_1` | right, below knee | down | 499 |
 | **Total** | | | **3,144** |
 
 ### Folder and file format
 
 ```
 dataset/
-└── lms_kamal_LA_downstairs_Nopeople_1/
+└── lms_subject1_LA_downstairs_Nopeople_1/
     ├── sharpen_rgb/PNG/image100.png      
     ├── raw_depth/PNG/image100.png        
     ├── colored_depth/PNG/                
@@ -71,16 +72,24 @@ Each line of a split file holds an RGB frame and its depth map, relative to
 `dataset/`:
 
 ```
-lms_kamal_LA_downstairs_Nopeople_1/sharpen_rgb/PNG/image100.png lms_kamal_LA_downstairs_Nopeople_1/raw_depth/PNG/image100.png
+lms_subject1_LA_downstairs_Nopeople_1/sharpen_rgb/PNG/image100.png lms_subject1_LA_downstairs_Nopeople_1/raw_depth/PNG/image100.png
 ```
 
 ### Availability
 
-To obtain the dataset, send an email to
-*mlisp.lms@fau.de* with the subject
-`[ISMT2026] LP Dataset - Access Request`, stating your name, title, affiliation,
-your intended use of data, and that you will not redistribute the data and will cite the
-paper. You will receive a download link; extract the archive into `dataset/`:
+To optain the dataset, please send an email to *mlisp.lms@fau.de* with subject matter
+'[ISMT2026] LP Dataset - Access Request' stating the following:
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *Your name, title and affiliation*
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *Your intended use of the data*
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The following license statement:
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *With this e-mail I agree that I will use the LP dataset following the Creative 
+Common Attribution-NonCommercial 4.0 International License.*
+
+We will promptly reply with a download link. Extract the archive into `dataset/`:
 
 ```sh
 tar -xzf lp_dataset.tar.gz -C dataset
@@ -89,8 +98,13 @@ tar -xzf lp_dataset.tar.gz -C dataset
 You can verify the number of frames per session with
 
 ```sh
-for d in dataset/lms_kamal_*; do echo "$d: $(ls "$d/sharpen_rgb/PNG" | wc -l)"; done
+for d in dataset/lms_subject1_*; do echo "$d: $(ls "$d/sharpen_rgb/PNG" | wc -l)"; done
 ```
+
+### License
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">
+<img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />The LP dataset and this repository are licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>. The full license text is in [LICENSE](LICENSE).
 
 ## Running the benchmark
 

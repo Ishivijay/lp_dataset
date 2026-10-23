@@ -256,12 +256,12 @@ def evaluate_all_sequences(base_dir, num_workers=16, min_depth=0.1, max_depth=10
     """
     
     sequences = [
-        "lms_kamal_LA_downstairs_Nopeople_1",
-        "lms_kamal_LA_upstairs_Nopeople_1", 
-        "lms_kamal_LB_upstairs_Nopeople_2",
-        "lms_kamal_RA_downstairs_Nopeople_1", 
-        "lms_kamal_RA_upstairs_Nopeople_1",
-        "lms_kamal_RB_downstairs_Nopeople_1"
+        "lms_subject1_LA_downstairs_Nopeople_1",
+        "lms_subject1_LA_upstairs_Nopeople_1", 
+        "lms_subject1_LB_upstairs_Nopeople_2",
+        "lms_subject1_RA_downstairs_Nopeople_1", 
+        "lms_subject1_RA_upstairs_Nopeople_1",
+        "lms_subject1_RB_downstairs_Nopeople_1"
     ]
     
     all_results = []

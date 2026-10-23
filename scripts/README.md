@@ -11,7 +11,7 @@ frames → least-squares affine alignment to ground truth (`GT = s·pred + t`)
 
 * Run all commands from the repository root.
 * Dataset at `dataset` with the
-  six sequence folders `lms_kamal_*` - the default `--base_dir` of all
+  six sequence folders `lms_subject1_*` - the default `--base_dir` of all
   scripts (`BASE_DIR` below).
 * One venv per model. 
 
@@ -58,9 +58,9 @@ wget "https://huggingface.co/depth-anything/Depth-Anything-V2-Large/resolve/main
      -O checkpoint/depth_anything_v2_vitl.pth
 
 # 1. inference - loop over the six sequence folders
-for SEQ in lms_kamal_LA_downstairs_Nopeople_1 lms_kamal_LA_upstairs_Nopeople_1 \
-           lms_kamal_LB_upstairs_Nopeople_2  lms_kamal_RA_downstairs_Nopeople_1 \
-           lms_kamal_RA_upstairs_Nopeople_1  lms_kamal_RB_downstairs_Nopeople_1; do
+for SEQ in lms_subject1_LA_downstairs_Nopeople_1 lms_subject1_LA_upstairs_Nopeople_1 \
+           lms_subject1_LB_upstairs_Nopeople_2  lms_subject1_RA_downstairs_Nopeople_1 \
+           lms_subject1_RA_upstairs_Nopeople_1  lms_subject1_RB_downstairs_Nopeople_1; do
   python Depth-Anything-V2/run.py --encoder vitl \
       --img-path "$BASE_DIR/$SEQ/sharpen_rgb/PNG" \
       --outdir   "$BASE_DIR/$SEQ/depth_anything_v2_large" \

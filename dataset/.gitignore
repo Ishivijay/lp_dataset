@@ -1,5 +1,5 @@
 # Dataset frames are distributed on request and are never committed.
-lms_kamal_*/
+lms_subject1_*/
 
 # Keep the split definitions and this note.
 !README.md

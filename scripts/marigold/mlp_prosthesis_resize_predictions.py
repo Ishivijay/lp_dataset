@@ -52,12 +52,12 @@ def resize_all_predictions():
     prediction_base = os.path.join(base_dir, "marigold_predictions")
     
     sequences = [
-        "lms_kamal_LA_downstairs_Nopeople_1",
-        "lms_kamal_LA_upstairs_Nopeople_1", 
-        "lms_kamal_LB_upstairs_Nopeople_2",
-        "lms_kamal_RA_downstairs_Nopeople_1", 
-        "lms_kamal_RA_upstairs_Nopeople_1",
-        "lms_kamal_RB_downstairs_Nopeople_1"
+        "lms_subject1_LA_downstairs_Nopeople_1",
+        "lms_subject1_LA_upstairs_Nopeople_1", 
+        "lms_subject1_LB_upstairs_Nopeople_2",
+        "lms_subject1_RA_downstairs_Nopeople_1", 
+        "lms_subject1_RA_upstairs_Nopeople_1",
+        "lms_subject1_RB_downstairs_Nopeople_1"
     ]
     
     num_workers = max(1, int(cpu_count() * 0.75))

@@ -239,12 +239,12 @@ def main():
     
     # Sequences to evaluate
     sequences = [
-        "lms_kamal_LA_downstairs_Nopeople_1",
-        "lms_kamal_LA_upstairs_Nopeople_1",
-        "lms_kamal_LB_upstairs_Nopeople_2",
-        "lms_kamal_RA_downstairs_Nopeople_1",
-        "lms_kamal_RA_upstairs_Nopeople_1",
-        "lms_kamal_RB_downstairs_Nopeople_1"
+        "lms_subject1_LA_downstairs_Nopeople_1",
+        "lms_subject1_LA_upstairs_Nopeople_1",
+        "lms_subject1_LB_upstairs_Nopeople_2",
+        "lms_subject1_RA_downstairs_Nopeople_1",
+        "lms_subject1_RA_upstairs_Nopeople_1",
+        "lms_subject1_RB_downstairs_Nopeople_1"
     ]
     
     print("=" * 80)
