@@ -57,8 +57,16 @@ dataset/
     └── transformed_depth/PNG/        
 ```
 
-The five representations share the same frame names within a session, so an RGB
-frame and its ground truth can always be paired by filename.
+Frames share the same names across representations within a session, so an RGB
+frame and its ground truth can always be paired by filename. Only `sharpen_rgb`
+and `raw_depth` are needed by the benchmark; the other folders are provided for
+completeness.
+
+Not every session ships all representations: `lms_subject1_RB_downstairs_Nopeople_1`
+contains only `sharpen_rgb`, `raw_depth` and `colored_depth`, without
+`smooth_depth` and `transformed_depth`. In that session each of the three folders
+also holds a single `image.gif` preview next to its `PNG/` directory. None of
+this affects the evaluation, since the scripts operate on the `PNG/` folders.
 
 ### Splits
 
