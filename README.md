@@ -97,10 +97,11 @@ To optain the dataset, please send an email to *mlisp.lms@fau.de* with subject m
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *With this e-mail I agree that I will use the LP dataset following the Creative 
 Common Attribution-NonCommercial 4.0 International License.*
 
-We will promptly reply with a download link. Extract the archive into `dataset/`:
+We will promptly reply with a download link. Extract it into
+`dataset/`:
 
 ```sh
-tar -xzf lp_dataset.tar.gz -C dataset
+unzip lp_dataset.zip -d dataset
 ```
 
 You can verify the number of frames per session with
